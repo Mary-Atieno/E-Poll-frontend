@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BallotComponent } from './votingcomponents/ballot/ballot.component';
-import { ResultComponent } from './votingcomponents/result/result.component';
-import { VerifyComponent } from './votingcomponents/verify/verify.component';
+import { LandingpageComponent } from './components/landingpage/landingpage.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BallotComponent,
-    ResultComponent,
-    VerifyComponent
+    LandingpageComponent,
+    NavbarComponent,
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
