@@ -23,10 +23,12 @@
         <br>
         <br>
         <p style="font-size:20px;">Let's make elections and voting seamless for <br>you.</p>
-        <button type="button" class="btn mt-5 text-center"
-          style="background-color:#219ebc;color:023047;border-radius:8px;width:fit-content; height:auto;">
-          <h3 class="p-3">Register as a Voter</h3>
-        </button>
+        <a routerLink= "admin-login">Sign in</a>
+        <button type="button" class="btn mt-5 text-center "
+            style="background-color:#219ebc;color:023047;border-radius:8px;width:fit-content; height:auto;">
+            <h3 class="p-3">Register as a Voter</h3>
+          </button>
+          <!-- <button (click)="adminLogin(email.value, password.value)">Sign In</button> -->
       </div>
       <div class="col-md-6 col-lg-6">
         <img src="/assets/voter.jpg" class="img-fluid" alt="Responsive image">
@@ -63,7 +65,7 @@
 
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="faqs">
     <div class="container faqs">
       <div class="row">
         <h1 class="text-center pt-5">Frequently Asked Questions</h1>
@@ -88,15 +90,15 @@
       </div>
       <div class="row d-flex justify-content-center pb-5">
         <button type="button" class="btn mt-5 text-center"
-        style="background-color:#219ebc; color:023047; width:fit-content; height:auto;border-radius:10px;font-size:10px !important;">
-        <h3 class="p-3">Submit your Questions.</h3>
-      </button>
+          style="background-color:#219ebc; color:023047; width:fit-content; height:auto;border-radius:10px;font-size:10px !important;">
+          <h3 class="p-3">Submit your Questions.</h3>
+        </button>
       </div>
     </div>
   </div>
 
 
-<app-footer></app-footer>
+  <app-footer></app-footer>
 
 
   <!-- Bootstrap JavaScript -->
