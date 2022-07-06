@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,20 +13,20 @@
 
 <body>
 
-<div class="container-fluid">
-  <div class="container">
-    <p class="signin">Sign in</p>
-    <p class="signin-text">Please sign in using your details</p>
-    
-    <input #email name="email" type="email" placeholder="Email Address">
-    <br />
-    <input #password name="password" type="password" placeholder="Password" required >
-  
-    <button (click)="signupUser()">Sign In</button>
-    
+  <div class="container-fluid">
+    <div class="container">
+      <p class="signin">Sign in</p>
+      <p class="signin-text">Please sign in using your details</p>
+
+      <input #email name="email" type="email" placeholder="Email Address">
+      <br />
+      <input #password name="password" type="password" placeholder="Password" required>
+
+      <button (click)="signupVoter()">Sign In</button>
+
+    </div>
   </div>
-</div>
-  
+
 
   <!-- Bootstrap JavaScript -->
 
@@ -37,28 +36,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
   </script>
- 
+
 </body>
 
 </html>
-
-
-
-<!-- <main class="form-signin">
-  <form class="form">
-    <h1 class="h3 mb-3 fw-normal">Please register</h1>
-    <div class="form-floating">
-      <input formControlName="name" class="form-control" placeholder="Name">
-      <label>Name</label>
-    </div>
-    <div class="form-floating">
-      <input formControlName="email" type="email" class="form-control" placeholder="name@example.com">
-      <label>Email address</label>
-    </div>
-    <div class="form-floating">
-      <input formControlName="password" type="password" class="form-control" placeholder="Password">
-      <label>Password</label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
-  </form>
-</main> -->
