@@ -16,6 +16,8 @@ import { CandidatesComponent } from './components/admin/candidates/candidates.co
 import { PositionComponent } from './components/admin/position/position.component';
 import { VotersComponent } from './components/admin/voters/voters.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
+import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
+import { BioComponent } from './components/admin/bio/bio.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { VotesComponent } from './components/admin/votes/votes.component';
     CandidatesComponent,
     PositionComponent,
     VotersComponent,
-    VotesComponent
+    VotesComponent,
+    SidebarComponent,
+    BioComponent
   ],
   imports: [
     BrowserModule,
