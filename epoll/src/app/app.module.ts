@@ -11,6 +11,11 @@ import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { VoterregComponent } from './components/voterreg/voterreg.component';
+import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
+import { CandidatesComponent } from './components/admin/candidates/candidates.component';
+import { PositionComponent } from './components/admin/position/position.component';
+import { VotersComponent } from './components/admin/voters/voters.component';
+import { VotesComponent } from './components/admin/votes/votes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { VoterregComponent } from './components/voterreg/voterreg.component';
     FooterComponent,
     LoginComponent,
     RegisterComponent,
-    VoterregComponent
+    VoterregComponent,
+    BallotPositionComponent,
+    CandidatesComponent,
+    PositionComponent,
+    VotersComponent,
+    VotesComponent
   ],
   imports: [
     BrowserModule,
