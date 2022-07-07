@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1" id="content"></div>
+        </div>
+    </section>
+    
+    <script>
+        $(function(){
+            fetch();
+        
+            $(document).on('click', '.reset', function(e){
+            e.preventDefault();
+            var desc = $(this).data('desc');
+            $('.'+desc).iCheck('uncheck');
+            });
+        
+            $(document).on('click', '.moveup', function(e){
+            e.preventDefault();
+            var id = $(this).data('id');
+            $('#'+id).animate({
+                'marginTop' : "-300px"
+            });
+            $.ajax({
+                type: 'GET',
+                url: '{% url "update_ballot_position" 1 "up" %}'.replace(1, id),
+                dataType: 'json',
+                success: function(response){
+                if(!response.error){
+                    fetch();
+                }
+                }
+            });
+            });
+        
+            $(document).on('click', '.movedown', function(e){
+            e.preventDefault();
+            var id = $(this).data('id');
+            $('#'+id).animate({
+                'marginTop' : "+300px"
+            });
+            $.ajax({
+                type: 'GET',
+                url:  '{% url "update_ballot_position" 1 "down" %}'.replace(1, id),
+                dataType: 'json',
+                success: function(response){
+                if(!response.error){
+                    fetch();
+                }
+                }
+            });
+            });
+        
+        });
+        
+        function fetch(){
+            $.ajax({
+            type: 'GET',
+            url: '{% url "fetch_ballot" %}',
+            dataType: 'json',
+            success: function(response){
+                $('#content').html(response).iCheck({checkboxClass: 'icheckbox_flat-green',radioClass: 'iradio_flat-green'});
+            }
+            });
+        }
+    </script>
+
+  <!-- Bootstrap JavaScript -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+  </script>
+ 
+</body>
+
+</html>
