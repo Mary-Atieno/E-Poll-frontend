@@ -18,6 +18,7 @@ import { VotersComponent } from './components/admin/voters/voters.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
 import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
 import { BioComponent } from './components/admin/bio/bio.component';
+import { HomeComponent } from './components/admin/home/home.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BioComponent } from './components/admin/bio/bio.component';
     VotersComponent,
     VotesComponent,
     SidebarComponent,
-    BioComponent
+    BioComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
