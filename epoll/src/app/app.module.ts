@@ -9,16 +9,16 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VoterregComponent } from './components/voterreg/voterreg.component';
-import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
-import { CandidatesComponent } from './components/admin/candidates/candidates.component';
-import { PositionComponent } from './components/admin/position/position.component';
-import { VotersComponent } from './components/admin/voters/voters.component';
-import { VotesComponent } from './components/admin/votes/votes.component';
-import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
-import { BioComponent } from './components/admin/bio/bio.component';
+
+import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
+import { CandidatecreateComponent } from './components/candidatecreate/candidatecreate.component';
+import { VotercreateComponent } from './components/votercreate/votercreate.component';
+import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
+import { VotesComponent } from './components/admin/votes/votes.component';
+
 
 @NgModule({
   declarations: [
@@ -29,20 +29,21 @@ import { HomeComponent } from './components/admin/home/home.component';
     LoginComponent,
     RegisterComponent,
     VoterregComponent,
-    BallotPositionComponent,
-    CandidatesComponent,
-    PositionComponent,
-    VotersComponent,
+    CandidateListComponent,
+    CandidatecreateComponent,
+    VotercreateComponent,
+    VoterlistComponent,
+    HomeComponent,
     VotesComponent,
-    SidebarComponent,
-    BioComponent,
-    HomeComponent
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
