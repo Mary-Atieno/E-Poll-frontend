@@ -1,0 +1,112 @@
+<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- Main content -->
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+<div class="row">
+<div class="col-lg-3 col-xs-6">
+  <!-- small box -->
+  <div class="small-box bg-aqua">
+    <div class="inner">
+      <!-- <h3>{{ position_count }}</h3> -->
+      <p>No. of Positions</p>
+    </div>
+    <div class="icon">
+      <i class="fa fa-tasks"></i>
+    </div>
+    <!-- <a href="{% url 'viewPositions' %}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
+  </div>
+</div>
+<!-- ./col -->
+<div class="col-lg-3 col-xs-6">
+  <!-- small box -->
+  <div class="small-box bg-green">
+    <div class="inner">
+      <!-- <h3>{{ candidate_count }}</h3>           -->
+      <p>No. of Candidates</p>
+    </div>
+    <div class="icon">
+      <i class="fa fa-black-tie"></i>
+    </div>
+    <!-- <a href="{% url 'viewCandidates' %}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
+  </div>
+</div>
+<!-- ./col -->
+<div class="col-lg-3 col-xs-6">
+  <!-- small box -->
+  <div class="small-box bg-yellow">
+    <div class="inner">
+      <!-- <h3>{{ voters_count }}</h3>              -->
+      <p>Total Voters</p>
+    </div>
+    <div class="icon">
+      <i class="fa fa-users"></i>
+    </div>
+    <!-- <a href="{% url 'adminViewVoters' %}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
+  </div>
+</div>
+<!-- ./col -->
+<div class="col-lg-3 col-xs-6">
+  <!-- small box -->
+  <div class="small-box bg-red">
+    <div class="inner">
+      <!-- <h3>{{ voted_voters_count }}</h3> -->
+      <p>Voters Voted</p>
+    </div>
+    <div class="icon">
+      <i class="fa fa-edit"></i>
+    </div>
+    <!-- <a href="{% url 'viewVotes' %}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
+  </div>
+</div>
+<!-- ./col -->
+</div>
+
+<div class="row">
+<div class="col-xs-12">
+  <h3>Votes Tally
+    <span class="pull-right">
+      <!-- <a href="{% url 'printResult' %}" class="btn btn-success btn-sm btn-flat"><span class="glyphicon glyphicon-print"></span> Print</a> -->
+    </span>
+  </h3>
+</div>
+</div>
+
+<!-- {% for position in positions %}
+{% if not forloop.counter|divisibleby:2 %} -->
+<div class='row'>
+<!-- {% endif %} -->
+<div class='col-sm-6'>
+<div class='box box-solid'>
+<div class='box-header with-border'>
+  <!-- <h4 class='box-title'><b>{{ position.name }}</b></h4> -->
+</div>
+<div class='box-body'>
+  <div class='chart'>
+    <!-- <canvas id='{{ position.name|slugify }}' style='height:200px'></canvas> -->
+  </div>
+</div>
+</div>
+</div>
+<!-- {% if forloop.counter|divisibleby:2 %} -->
+</div>
+<!-- {% endif %}
+{% endfor %}
+{% if not forloop.counter|divisibleby:2 %} -->
+<!-- </div> -->
+<!-- {% endif %} -->
+</section>
+</body>
+</html>

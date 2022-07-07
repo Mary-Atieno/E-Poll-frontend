@@ -15,6 +15,9 @@ import { CandidateListComponent } from './components/candidate-list/candidate-li
 import { CandidatecreateComponent } from './components/candidatecreate/candidatecreate.component';
 import { VotercreateComponent } from './components/votercreate/votercreate.component';
 import { VoterlistComponent } from './components/voterlist/voterlist.component';
+import { HomeComponent } from './components/admin/home/home.component';
+import { VotesComponent } from './components/admin/votes/votes.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { VoterlistComponent } from './components/voterlist/voterlist.component';
     CandidateListComponent,
     CandidatecreateComponent,
     VotercreateComponent,
-    VoterlistComponent
+    VoterlistComponent,
+    HomeComponent,
+    VotesComponent,
+    
   ],
   imports: [
     BrowserModule,

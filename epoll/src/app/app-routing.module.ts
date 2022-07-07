@@ -10,6 +10,7 @@ import { CandidatecreateComponent } from './components/candidatecreate/candidate
 import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
 import { VotercreateComponent } from './components/votercreate/votercreate.component';
 import { VoterlistComponent } from './components/voterlist/voterlist.component';
+import { HomeComponent } from './components/admin/home/home.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,9 @@ const routes: Routes = [
   { path: 'candidate-create', component: CandidatecreateComponent},
   { path: 'candidate-list', component: CandidateListComponent},
   { path: 'voter-create', component: VotercreateComponent},
-  { path: 'voter-list', component: VoterlistComponent}
+  { path: 'voter-list', component: VoterlistComponent},
+  { path: 'admin-dashboard', component: HomeComponent},
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

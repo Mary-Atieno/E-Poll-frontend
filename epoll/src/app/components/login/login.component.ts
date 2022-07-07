@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
     this.http.post('https://e-poll-backend.herokuapp.com/api/login/', this.form.getRawValue(), {
       withCredentials: true
     })
-      .subscribe(() => this.router.navigate(['/home']));
+      .subscribe(() => this.router.navigate(['/admin-dashboard']));
     
 
   }
