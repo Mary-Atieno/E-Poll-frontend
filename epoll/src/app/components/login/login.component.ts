@@ -29,10 +29,10 @@ export class LoginComponent implements OnInit {
 
   submit():void{
     console.log(this.form.getRawValue());
-    this.http.post('https://e-poll-backend.herokuapp.com/api/login', this.form.getRawValue(), {
+    this.http.post('https://e-poll-backend.herokuapp.com/api/login/', this.form.getRawValue(), {
       withCredentials: true
     })
-      .subscribe(() => this.router.navigate(['/admin-register']));
+      .subscribe(() => this.router.navigate(['/home']));
     
 
   }
