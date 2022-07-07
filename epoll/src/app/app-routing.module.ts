@@ -11,7 +11,7 @@ import { CandidateListComponent } from './components/candidate-list/candidate-li
 import { VotercreateComponent } from './components/votercreate/votercreate.component';
 import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
-
+import { VoterloginComponent } from './components/voterlogin/voterlogin.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -24,6 +24,7 @@ const routes: Routes = [
   { path: 'voter-create', component: VotercreateComponent},
   { path: 'voter-list', component: VoterlistComponent},
   { path: 'admin-dashboard', component: HomeComponent},
+  { path: 'voter-login', component: VoterloginComponent}
 
 ];
 @NgModule({

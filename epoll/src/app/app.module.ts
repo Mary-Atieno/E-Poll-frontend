@@ -17,6 +17,7 @@ import { VotercreateComponent } from './components/votercreate/votercreate.compo
 import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
+import { VoterloginComponent } from './components/voterlogin/voterlogin.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { VotesComponent } from './components/admin/votes/votes.component';
     VoterlistComponent,
     HomeComponent,
     VotesComponent,
+    VoterloginComponent,
     
   ],
   imports: [
