@@ -15,30 +15,40 @@
 
 <div class="container-fluid">
 
-
-  <p>login works!</p>
-  <main class="form-signin w-100 m-auto">
-      <form [formGroup]="form" (submit)="submit()">
-        
-        <h1 class="h3 mb-3 fw-normal">Welcome Back</h1>
-        <div class="form-floating mt-3">
-          <input type="email" formControlName="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating mt-3">
-          <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">Password</label>
-        </div>
-    
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-        
-      </form>
-    </main>
+<div class="row pb-5">
+  <div class="col-md-6 col-lg-6 form-admin">
+      <main class="form-signin m-auto ">
+        <form [formGroup]="form" (submit)="submit()">
+          
+          <h1 class="h3 mb-3 fw-normal text-center">Welcome Back</h1>
+          <div class="form-floating mt-3">
+            <input type="email" formControlName="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mt-3">
+            <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+      
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <div class="btns mt-5">
+  
+            <button class="w-100 btn btn-lg" type="submit">Login</button>
+            <a routerLink="/register"><button class="w-100 btn btn-lg " type="submit">Register</button></a>
+          </div>
+          
+          
+        </form>
+      </main>
+  </div>
+  <div class="col-md-6 col-lg-6">
+    <img src="/assets/Work time-amico.png" class="img-fluid" alt="Admin Image">
+  </div>
+</div>
 
 </div>
   
