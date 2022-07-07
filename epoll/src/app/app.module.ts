@@ -11,6 +11,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VoterregComponent } from './components/voterreg/voterreg.component';
+
 import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
 import { CandidatecreateComponent } from './components/candidatecreate/candidatecreate.component';
 import { VotercreateComponent } from './components/votercreate/votercreate.component';
@@ -35,6 +36,7 @@ import { VotesComponent } from './components/admin/votes/votes.component';
     HomeComponent,
     VotesComponent,
     
+
   ],
   imports: [
     BrowserModule,
