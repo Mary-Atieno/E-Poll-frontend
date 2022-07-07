@@ -14,17 +14,49 @@
 <body>
 
 <div class="container-fluid">
-  <div class="container">
-    <p class="signin">Sign in</p>
-    <p class="signin-text">Please sign in using your details</p>
-    
-    <input #email name="email" type="email" placeholder="Email Address">
-    <br />
-    <input #password name="password" type="password" placeholder="Password" required >
-  
-    <button (click)="signupUser()">Sign In</button>
-    
+<div class="row">
+  <div class="col-md-6 col-lg-6">
+    <img src="/assets/Work time-amico.png" class="img-fluid" alt="Admin Image">
+
   </div>
+  <div class="col-md-6 col-lg-6 form-admin">
+    <main class="form-signin  m-auto ">
+      <form [formGroup]="form" (submit)="submit()">
+        
+        <h1 class="h3 mb-3 fw-normal text-center">Admin SignUp</h1>
+  
+        <div class="form-floating mt-3">
+          <input formControlName="name" type="name" class="form-control" id="floatingInput" placeholder="johndoe">
+          <label for="floatingInput">Name</label>
+        </div>
+  
+        <div class="form-floating mt-3">
+          <input formControlName="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+  
+        <div class="form-floating mt-3">
+          <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+    
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <div class="btns mt-5">
+          <button class="w-100 btn btn-lg" type="submit">Register</button>
+          <button class="w-100 btn btn-lg " type="submit" routerLink="/admin-login">Login</button>
+        </div>
+        
+        
+      </form>
+    </main>
+  </div>
+</div>
+
+
 </div>
   
 
@@ -61,3 +93,14 @@
     <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
   </form>
 </main> -->
+  <!-- <div class="container">
+    <p class="signin">Sign in</p>
+    <p class="signin-text">Please sign in using your details</p>
+    
+    <input #email name="email" type="email" placeholder="Email Address">
+    <br />
+    <input #password name="password" type="password" placeholder="Password" required >
+  
+    <button (click)="signupUser()">Sign In</button>
+    
+  </div> -->

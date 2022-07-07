@@ -10,6 +10,10 @@ import { CandidatesComponent } from './components/candidates/candidates.componen
 import { NewcandidateComponent } from './components/newcandidate/newcandidate.component';
 import { PositionsComponent } from './components/positions/positions.component';
 import { NewpositionComponent } from './components/newposition/newposition.component';
+import { VotercreateComponent } from './components/votercreate/votercreate.component';
+import { VoterlistComponent } from './components/voterlist/voterlist.component';
+import { HomeComponent } from './components/admin/home/home.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -21,8 +25,11 @@ const routes: Routes = [
   { path: 'new-candidate', component: NewcandidateComponent},
   { path: 'positions', component: PositionsComponent},
   { path: 'new-position', component: NewpositionComponent},
+  { path: 'voter-create', component: VotercreateComponent},
+  { path: 'voter-list', component: VoterlistComponent},
+  { path: 'admin-dashboard', component: HomeComponent},
 
-]
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

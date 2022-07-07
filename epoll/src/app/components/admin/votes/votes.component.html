@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header with-border">
+                        <a href="#reset" data-toggle="modal" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-refresh"></i> Reset</a>
+                    </div>
+                    <div class="box-body">
+                        <table id="example1" class="table table-bordered">
+                            <thead>
+                                <th>Voter's Name</th>
+                                <th>Candidate Voted For</th>
+                                <th>Position</th>
+                            </thead>
+                            
+                            <tbody>
+                                <!-- {% for vote in votes %}
+                                <tr>
+                                    <td>{{ vote.voter }}</td>
+                                    <td>{{ vote.candidate }}</td>
+                                    <td>{{ vote.position }}</td>
+                                </tr>
+                                {% endfor %} -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Model -->
+    <!-- Reset -->
+    <div class="modal fade" id="reset">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title"><b>Reseting...</b></h4>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                      <p>RESET VOTES</p>
+                      <h4>This will delete all votes.</h4>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+                  <!-- <a href="{% url 'resetVote' %}" class="btn btn-danger btn-flat"><i class="fa fa-refresh"></i> Reset</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function() {
+            $(document).on('click', '.edit', function(e) {
+                e.preventDefault();
+                $('#edit').modal('show');
+                var id = $(this).data('id');
+                getRow(id);
+            });
+      
+            $(document).on('click', '.delete', function(e) {
+                e.preventDefault();
+                $('#delete').modal('show');
+                var id = $(this).data('id');
+                getRow(id);
+            });
+      
+      
+        });
+      
+        function getRow(id) {
+            $.ajax({
+                type: 'GET',
+                url: '{% url "viewCandidate" %}',
+                data: {
+                    id: id
+                },
+                dataType: 'json',
+                success: function(response) {
+                  $('.id').val(id),
+                    $('.display_form').html(response.form);
+                    $('.fullname').html(response.fullname);
+                },
+               
+            });
+        }
+    </script>
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+ 
+</body>
+
+</html>
+
