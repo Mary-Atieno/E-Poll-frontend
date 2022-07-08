@@ -1,3 +1,4 @@
+Ballot Works
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,23 +13,23 @@
 </head>
 
 <body>
-    
+
     <section class="content">
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1" id="content"></div>
         </div>
     </section>
-    
+
     <script>
         $(function(){
             fetch();
-        
+
             $(document).on('click', '.reset', function(e){
             e.preventDefault();
             var desc = $(this).data('desc');
             $('.'+desc).iCheck('uncheck');
             });
-        
+
             $(document).on('click', '.moveup', function(e){
             e.preventDefault();
             var id = $(this).data('id');
@@ -46,7 +47,7 @@
                 }
             });
             });
-        
+
             $(document).on('click', '.movedown', function(e){
             e.preventDefault();
             var id = $(this).data('id');
@@ -64,9 +65,9 @@
                 }
             });
             });
-        
+
         });
-        
+
         function fetch(){
             $.ajax({
             type: 'GET',
@@ -87,7 +88,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
   </script>
- 
+
 </body>
 
 </html>
