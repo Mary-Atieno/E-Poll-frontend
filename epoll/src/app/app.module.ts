@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
@@ -23,10 +22,14 @@ import { VoterhomeComponent } from './components/voter/voterhome/voterhome.compo
 import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
 
 import { VotersComponent } from './components/admin/voters/voters.component';
+
 import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
 import { BioComponent } from './components/admin/bio/bio.component';
 import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
 import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
+
+import { VoterdashboardComponent } from './components/voter/voterdashboard/voterdashboard.component';
+
 
 
 
@@ -45,6 +48,7 @@ import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
     NewpositionComponent,
     HomeComponent,
     VotesComponent,
+
     BioComponent,
     BallotPositionComponent,
     SidebarComponent,
@@ -55,8 +59,13 @@ import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
     VoterlogoutComponent,
 
 
+
+    VoterloginComponent,
+    VoterhomeComponent,
+    VoterlogoutComponent,
+
     VotersComponent,
-    VotercreateComponent,
+    VoterdashboardComponent,
 
   ],
   imports: [
