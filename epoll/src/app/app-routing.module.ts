@@ -11,13 +11,25 @@ import { NewcandidateComponent } from './components/admin/newcandidate/newcandid
 import { PositionsComponent } from './components/admin/positions/positions.component';
 import { NewpositionComponent } from './components/admin/newposition/newposition.component';
 import { HomeComponent } from './components/admin/home/home.component';
-
 import { VoterloginComponent } from './components/voterlogin/voterlogin.component';
 import { VoterhomeComponent } from './components/voter/voterhome/voterhome.component';
 import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
 import { VotersComponent } from './components/admin/voters/voters.component';
-// import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
+
+import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
+import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
+import { BioComponent } from './components/admin/bio/bio.component';
+import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
+// <app-candidates></app-candidates>
+// <app-home></app-home>
+// <app-newcandidate></app-newcandidate>
+// <app-newposition></app-newposition>
+// <app-positions></app-positions>
+// <app-sidebar></app-sidebar>
+// <app-votercreate></app-votercreate>
+// <app-voters></app-voters>
+// <app-votes></app-votes> -->
 
 
 
@@ -35,10 +47,12 @@ const routes: Routes = [
   // { path: 'voter-list', component: VoterlistComponent},
   { path: 'admin-dashboard', component: HomeComponent},
 
+//  Voter Routes
   { path: 'voter-login', component: VoterloginComponent},
   { path: 'voter-home', component: VoterhomeComponent},
   { path: 'voter-logout', component: VoterlogoutComponent},
 
+  // Admin Routes
   { path: 'totalvotes', component: VotesComponent},
   { path: 'all-voters', component: VotersComponent},
   // { path: 'new-voter', component: VotercreateComponent},

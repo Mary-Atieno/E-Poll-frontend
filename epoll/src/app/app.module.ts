@@ -23,6 +23,10 @@ import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout
 
 import { VotersComponent } from './components/admin/voters/voters.component';
 import { VoterdashboardComponent } from './components/admin/voterdashboard/voterdashboard.component';
+import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
+import { BioComponent } from './components/admin/bio/bio.component';
+import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
+import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
 
 
 
@@ -44,6 +48,16 @@ import { VoterdashboardComponent } from './components/admin/voterdashboard/voter
     VoterloginComponent,
     VoterhomeComponent,
     VoterlogoutComponent,
+    BioComponent,
+    BallotPositionComponent,
+    SidebarComponent,
+
+
+    VoterloginComponent,
+    VoterhomeComponent,
+    VoterlogoutComponent,
+
+
     VotersComponent,
     VoterdashboardComponent,
 
