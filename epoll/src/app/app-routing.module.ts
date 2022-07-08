@@ -20,6 +20,7 @@ import { VotercreateComponent } from './components/admin/votercreate/votercreate
 import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
 import { BioComponent } from './components/admin/bio/bio.component';
 import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
+import { VoterdashboardComponent } from './components/voter/voterdashboard/voterdashboard.component';
 // <app-candidates></app-candidates>
 // <app-home></app-home>
 // <app-newcandidate></app-newcandidate>
@@ -48,6 +49,7 @@ const routes: Routes = [
   { path: 'voter-login', component: VoterloginComponent},
   { path: 'voter-home', component: VoterhomeComponent},
   { path: 'voter-logout', component: VoterlogoutComponent},
+  { path: 'voter-dashboard', component: VoterdashboardComponent},
 
   // Admin Routes
   { path: 'totalvotes', component: VotesComponent},

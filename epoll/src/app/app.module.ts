@@ -27,6 +27,7 @@ import { VotercreateComponent } from './components/admin/votercreate/votercreate
 import { BioComponent } from './components/admin/bio/bio.component';
 import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
 import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
+import { VoterdashboardComponent } from './components/voter/voterdashboard/voterdashboard.component';
 
 
 
@@ -57,6 +58,8 @@ import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
 
     VotersComponent,
     VotercreateComponent,
+    VoterdashboardComponent
+
 
   ],
   imports: [
