@@ -16,6 +16,7 @@ import { VoterhomeComponent } from './components/voter/voterhome/voterhome.compo
 import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
 import { VotersComponent } from './components/admin/voters/voters.component';
+
 import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
 import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
 import { BioComponent } from './components/admin/bio/bio.component';
@@ -42,6 +43,8 @@ const routes: Routes = [
   { path: 'new-candidate', component: NewcandidateComponent},
   { path: 'positions', component: PositionsComponent},
   { path: 'new-position', component: NewpositionComponent},
+  // { path: 'voter-create', component: VotercreateComponent},
+  // { path: 'voter-list', component: VoterlistComponent},
   { path: 'admin-dashboard', component: HomeComponent},
 
 //  Voter Routes
@@ -52,7 +55,7 @@ const routes: Routes = [
   // Admin Routes
   { path: 'totalvotes', component: VotesComponent},
   { path: 'all-voters', component: VotersComponent},
-  { path: 'new-voter', component: VotercreateComponent},
+  // { path: 'new-voter', component: VotercreateComponent},
 
 
 
