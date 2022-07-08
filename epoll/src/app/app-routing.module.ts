@@ -10,10 +10,15 @@ import { CandidatesComponent } from './components/admin/candidates/candidates.co
 import { NewcandidateComponent } from './components/admin/newcandidate/newcandidate.component';
 import { PositionsComponent } from './components/admin/positions/positions.component';
 import { NewpositionComponent } from './components/admin/newposition/newposition.component';
-// import { VotercreateComponent } from './components/votercreate/votercreate.component';
-// import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
-import { VoterdashboardComponent } from './components/admin/voterdashboard/voterdashboard.component';
+
+import { VoterloginComponent } from './components/voterlogin/voterlogin.component';
+import { VoterhomeComponent } from './components/voter/voterhome/voterhome.component';
+import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
+import { VotesComponent } from './components/admin/votes/votes.component';
+import { VotersComponent } from './components/admin/voters/voters.component';
+// import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
+
 
 
 const routes: Routes = [
@@ -29,7 +34,16 @@ const routes: Routes = [
   // { path: 'voter-create', component: VotercreateComponent},
   // { path: 'voter-list', component: VoterlistComponent},
   { path: 'admin-dashboard', component: HomeComponent},
-  { path: 'voterdashboard', component: VoterdashboardComponent},
+
+  { path: 'voter-login', component: VoterloginComponent},
+  { path: 'voter-home', component: VoterhomeComponent},
+  { path: 'voter-logout', component: VoterlogoutComponent},
+
+  { path: 'totalvotes', component: VotesComponent},
+  { path: 'all-voters', component: VotersComponent},
+  // { path: 'new-voter', component: VotercreateComponent},
+
+
 
 ];
 @NgModule({

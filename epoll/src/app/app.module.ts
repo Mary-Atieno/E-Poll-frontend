@@ -16,8 +16,13 @@ import { PositionsComponent } from './components/admin/positions/positions.compo
 import { NewpositionComponent } from './components/admin/newposition/newposition.component';
 import { HomeComponent } from './components/admin/home/home.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
+
+import { VoterloginComponent } from './components/voterlogin/voterlogin.component';
+import { VoterhomeComponent } from './components/voter/voterhome/voterhome.component';
+import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
+
 import { VotersComponent } from './components/admin/voters/voters.component';
-import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
+import { VoterdashboardComponent } from './components/admin/voterdashboard/voterdashboard.component';
 
 
 
@@ -36,8 +41,12 @@ import { VotercreateComponent } from './components/admin/votercreate/votercreate
     NewpositionComponent,
     HomeComponent,
     VotesComponent,
+    VoterloginComponent,
+    VoterhomeComponent,
+    VoterlogoutComponent,
     VotersComponent,
-    VotercreateComponent,
+    VoterdashboardComponent,
+
   ],
   imports: [
     BrowserModule,
