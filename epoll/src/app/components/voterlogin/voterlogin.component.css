@@ -3,8 +3,8 @@
     margin: 0;
     padding:0;
     box-sizing:border-box;
+    
 }
-
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #023047 !important;
@@ -15,7 +15,6 @@ body{
     bottom: 0;
     right: 0;
     overflow: auto;
-
 }
 
 .form-signin {
