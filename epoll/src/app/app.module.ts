@@ -14,11 +14,11 @@ import { CandidatesComponent } from './components/admin/candidates/candidates.co
 import { NewcandidateComponent } from './components/admin/newcandidate/newcandidate.component';
 import { PositionsComponent } from './components/admin/positions/positions.component';
 import { NewpositionComponent } from './components/admin/newposition/newposition.component';
-import { VotercreateComponent } from './components/votercreate/votercreate.component';
-import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
-import { VoterdashboardComponent } from './components/admin/voterdashboard/voterdashboard.component';
+import { VotersComponent } from './components/admin/voters/voters.component';
+import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
+
 
 
 @NgModule({
@@ -34,12 +34,10 @@ import { VoterdashboardComponent } from './components/admin/voterdashboard/voter
     NewcandidateComponent,
     PositionsComponent,
     NewpositionComponent,
-    VotercreateComponent,
-    VoterlistComponent,
     HomeComponent,
     VotesComponent,
-    VoterdashboardComponent,
-    
+    VotersComponent,
+    VotercreateComponent,
   ],
   imports: [
     BrowserModule,

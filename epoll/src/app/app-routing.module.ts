@@ -10,8 +10,8 @@ import { CandidatesComponent } from './components/admin/candidates/candidates.co
 import { NewcandidateComponent } from './components/admin/newcandidate/newcandidate.component';
 import { PositionsComponent } from './components/admin/positions/positions.component';
 import { NewpositionComponent } from './components/admin/newposition/newposition.component';
-import { VotercreateComponent } from './components/votercreate/votercreate.component';
-import { VoterlistComponent } from './components/voterlist/voterlist.component';
+// import { VotercreateComponent } from './components/votercreate/votercreate.component';
+// import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
 import { VoterdashboardComponent } from './components/admin/voterdashboard/voterdashboard.component';
 
@@ -26,8 +26,8 @@ const routes: Routes = [
   { path: 'new-candidate', component: NewcandidateComponent},
   { path: 'positions', component: PositionsComponent},
   { path: 'new-position', component: NewpositionComponent},
-  { path: 'voter-create', component: VotercreateComponent},
-  { path: 'voter-list', component: VoterlistComponent},
+  // { path: 'voter-create', component: VotercreateComponent},
+  // { path: 'voter-list', component: VoterlistComponent},
   { path: 'admin-dashboard', component: HomeComponent},
   { path: 'voterdashboard', component: VoterdashboardComponent},
 
