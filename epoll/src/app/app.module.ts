@@ -22,7 +22,7 @@ import { VoterhomeComponent } from './components/voter/voterhome/voterhome.compo
 import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
 
 import { VotersComponent } from './components/admin/voters/voters.component';
-import { VoterdashboardComponent } from './components/admin/voterdashboard/voterdashboard.component';
+import { VoterdashboardComponent } from './components/voter/voterdashboard/voterdashboard.component';
 
 
 
