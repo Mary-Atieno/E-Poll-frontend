@@ -21,7 +21,7 @@ tsktsk voter
       </div>
       <div class="col-md-6 col-lg-6 form-admin">
         <main class="form-signin  m-auto ">
-          <form>
+          <form [formGroup]="form" (submit)="submit()">
 
             <h1 class="h3 mb-3 fw-normal text-center">Register as a Voter</h1>
 

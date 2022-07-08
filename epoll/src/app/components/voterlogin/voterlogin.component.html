@@ -19,8 +19,8 @@
 <div class="row">
   <div class="col-md-6 col-lg-6 form-admin">
       <main class="form-signin m-auto ">
-        <form>
-          
+        <form [formGroup]="form" (submit)='submit()'>
+
           <h1 class="h3 mb-3 fw-normal text-center">Welcome Back</h1>
           <div class="form-floating mt-3">
             <input type="email" formControlName="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -30,19 +30,19 @@
             <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
           </div>
-      
+
           <div class="checkbox mb-3">
             <label>
               <input type="checkbox" value="remember-me"> Remember me
             </label>
           </div>
           <div class="btns mt-5">
-  
+
             <button class="w-100 btn btn-lg" type="submit">Login</button>
             <a routerLink="/voter-register"><button class="w-100 btn btn-lg " type="submit">Register</button></a>
           </div>
-          
-          
+
+
         </form>
       </main>
   </div>
@@ -52,7 +52,7 @@
 </div>
 
 </div>
-  
+
 
   <!-- Bootstrap JavaScript -->
 
@@ -62,7 +62,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
   </script>
- 
+
 </body>
 
 </html>

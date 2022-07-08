@@ -18,6 +18,8 @@ import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
 import { VoterloginComponent } from './components/voterlogin/voterlogin.component';
+import { VoterhomeComponent } from './components/voter/voterhome/voterhome.component';
+import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import { VoterloginComponent } from './components/voterlogin/voterlogin.componen
     HomeComponent,
     VotesComponent,
     VoterloginComponent,
+    VoterhomeComponent,
+    VoterlogoutComponent,
     
   ],
   imports: [

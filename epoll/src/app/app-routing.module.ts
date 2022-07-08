@@ -12,6 +12,11 @@ import { VotercreateComponent } from './components/votercreate/votercreate.compo
 import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
 import { VoterloginComponent } from './components/voterlogin/voterlogin.component';
+import { VoterhomeComponent } from './components/voter/voterhome/voterhome.component';
+import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
+
+
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -24,7 +29,9 @@ const routes: Routes = [
   { path: 'voter-create', component: VotercreateComponent},
   { path: 'voter-list', component: VoterlistComponent},
   { path: 'admin-dashboard', component: HomeComponent},
-  { path: 'voter-login', component: VoterloginComponent}
+  { path: 'voter-login', component: VoterloginComponent},
+  { path: 'voter-home', component: VoterhomeComponent},
+  { path: 'voter-logout', component: VoterlogoutComponent}
 
 ];
 @NgModule({
