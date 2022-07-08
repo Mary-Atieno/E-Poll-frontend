@@ -13,6 +13,7 @@ import { NewpositionComponent } from './components/admin/newposition/newposition
 import { VotercreateComponent } from './components/votercreate/votercreate.component';
 import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
+import { VoterdashboardComponent } from './components/admin/voterdashboard/voterdashboard.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'voter-create', component: VotercreateComponent},
   { path: 'voter-list', component: VoterlistComponent},
   { path: 'admin-dashboard', component: HomeComponent},
+  { path: 'voterdashboard', component: VoterdashboardComponent},
 
 ];
 @NgModule({

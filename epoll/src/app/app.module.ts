@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
@@ -19,6 +18,7 @@ import { VotercreateComponent } from './components/votercreate/votercreate.compo
 import { VoterlistComponent } from './components/voterlist/voterlist.component';
 import { HomeComponent } from './components/admin/home/home.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
+import { VoterdashboardComponent } from './components/admin/voterdashboard/voterdashboard.component';
 
 
 @NgModule({
@@ -38,8 +38,8 @@ import { VotesComponent } from './components/admin/votes/votes.component';
     VoterlistComponent,
     HomeComponent,
     VotesComponent,
+    VoterdashboardComponent,
     
-
   ],
   imports: [
     BrowserModule,
