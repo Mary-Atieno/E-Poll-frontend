@@ -11,15 +11,20 @@ import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VoterregComponent } from './components/voterreg/voterreg.component';
-import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
-import { CandidatecreateComponent } from './components/candidatecreate/candidatecreate.component';
-import { VotercreateComponent } from './components/votercreate/votercreate.component';
-import { VoterlistComponent } from './components/voterlist/voterlist.component';
+import { CandidatesComponent } from './components/admin/candidates/candidates.component';
+import { NewcandidateComponent } from './components/admin/newcandidate/newcandidate.component';
+import { PositionsComponent } from './components/admin/positions/positions.component';
+import { NewpositionComponent } from './components/admin/newposition/newposition.component';
 import { HomeComponent } from './components/admin/home/home.component';
 import { VotesComponent } from './components/admin/votes/votes.component';
+
 import { VoterloginComponent } from './components/voterlogin/voterlogin.component';
 import { VoterhomeComponent } from './components/voter/voterhome/voterhome.component';
 import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout.component';
+
+import { VotersComponent } from './components/admin/voters/voters.component';
+import { VotercreateComponent } from './components/admin/votercreate/votercreate.component';
+
 
 
 @NgModule({
@@ -31,16 +36,21 @@ import { VoterlogoutComponent } from './components/voter/voterlogout/voterlogout
     LoginComponent,
     RegisterComponent,
     VoterregComponent,
-    CandidateListComponent,
-    CandidatecreateComponent,
-    VotercreateComponent,
-    VoterlistComponent,
+    CandidatesComponent,
+    NewcandidateComponent,
+    PositionsComponent,
+    NewpositionComponent,
     HomeComponent,
     VotesComponent,
+
     VoterloginComponent,
     VoterhomeComponent,
     VoterlogoutComponent,
     
+
+    VotersComponent,
+    VotercreateComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -10,8 +10,7 @@
 
 <body>
     <!-- sidebar -->
-    <div class="container">
-        <br>
+    <div class="container"><br><br>
         <div class="card">
             <div class="row">
                 <div class="col-md-4"
@@ -32,7 +31,8 @@
                     <h5><a href="" class="text-white" style="text-decoration:none;">Voters</a></h5>
                     <br>
                     <br>
-                    <h5><a href="" class="text-white" style="text-decoration:none;">Manage</a></h5>
+                    <br>
+                    <h5><a href="" style="text-decoration:none; color:#219ebc; font-weight:bold">Manage</a></h5>
                     <br>
                     <br>
                     <br>
@@ -43,35 +43,33 @@
                     <br>
                     <br>
                     <h5><a href="" class="text-white" style="text-decoration:none;">Ballot-Position</a></h5>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br>
+                    <h5><a href="" class="text-white" style="text-decoration:none;">Logout</a></h5>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="col-md-5" style="border:none;margin-left: 20px;">
+                <div class="col-md-5" style="border:none;margin-left: 30px;">
                     <br><br>
-                    <h2 class="ml-5">Votes</h2>
-                    <button type="button" class="btn btn-md btn-info ml-5">+Add</button>
+                    <h2>new Position</h2>
+                    <br>
+                    <button type="button" class="btn btn-md btn-info"style="background-color:#219ebc; color:023047; width:fit-content;
+                     height:auto;border-radius:10px;font-size:20px !important;">+Add</button>
                     <br><br><br>
-                    <div class="card shadow border p-3"
-                        style="width: 500px; background-color: rgba(217, 217, 217, 1); height:auto;">
-                        <table>
-                            <thead>
-                                <th>Username</th>
-                                <th>Email</th>
-                                <th>ID</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Firstplace</td>
-                                    <td>moringaschool@voter.com</td>
-                                    <td>12345678</td>
-                                </tr>
-                            </tbody>
-                            <br><br><br>
-                        </table>
+                    <h2 class="ml-5">Add new Position</h2>
+                    <div class="card shadow border p-3" style="width: 500px; background-color: rgba(217, 217, 217, 1); height:auto;">
+                        <form action="">
+                            <label for="name">Name</label><br>
+                            <input type="text">
+                            <br><br>
+                            <label for="name">Maximum Votes</label><br>
+                            <input type="text">
+                            <br><br>
+                        </form>
                     </div>
+                    <button type="button" class="btn btn-md btn-info"style="background-color:#219ebc; color:023047; width:fit-content;
+                     height:auto;border-radius:10px;font-size:20px !important;">+Add</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>
