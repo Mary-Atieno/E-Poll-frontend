@@ -63,6 +63,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "epoll:build"
+
+          },
           "configurations": {
             "production": {
               "browserTarget": "epoll:build:production"

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { VoterdashService } from './voterdash.service';
+import { PositionService } from './position.service';
 
-describe('VoterdashService', () => {
-  let service: VoterdashService;
+describe('PositionService', () => {
+  let service: PositionService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(VoterdashService);
+    service = TestBed.inject(PositionService);
   });
 
   it('should be created', () => {

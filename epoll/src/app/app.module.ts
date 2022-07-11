@@ -28,6 +28,7 @@ import { BioComponent } from './components/admin/bio/bio.component';
 import { BallotPositionComponent } from './components/admin/ballot-position/ballot-position.component';
 import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
 import { VoterdashboardComponent } from './components/voter/voterdashboard/voterdashboard.component';
+import { CandidateDetailsComponent } from './components/admin/candidate-details/candidate-details.component';
 
 
 
@@ -58,7 +59,8 @@ import { VoterdashboardComponent } from './components/voter/voterdashboard/voter
 
     VotersComponent,
     VotercreateComponent,
-    VoterdashboardComponent
+    VoterdashboardComponent,
+    CandidateDetailsComponent
 
 
   ],

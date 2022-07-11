@@ -21,6 +21,7 @@ import { BallotPositionComponent } from './components/admin/ballot-position/ball
 import { BioComponent } from './components/admin/bio/bio.component';
 import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
 import { VoterdashboardComponent } from './components/voter/voterdashboard/voterdashboard.component';
+import { CandidateDetailsComponent } from './components/admin/candidate-details/candidate-details.component';
 // <app-candidates></app-candidates>
 // <app-home></app-home>
 // <app-newcandidate></app-newcandidate>
@@ -38,7 +39,6 @@ const routes: Routes = [
   { path: 'home', component: LandingpageComponent},
   { path: 'admin-login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
-  { path: 'voter-register', component: VoterregComponent},
   { path: 'candidates', component: CandidatesComponent},
   { path: 'new-candidate', component: NewcandidateComponent},
   { path: 'positions', component: PositionsComponent},
@@ -46,15 +46,18 @@ const routes: Routes = [
   { path: 'admin-dashboard', component: HomeComponent},
 
 //  Voter Routes
+  { path: 'voter-register', component: VoterregComponent},
   { path: 'voter-login', component: VoterloginComponent},
   { path: 'voter-home', component: VoterhomeComponent},
   { path: 'voter-logout', component: VoterlogoutComponent},
   { path: 'voter-dashboard', component: VoterdashboardComponent},
 
+
   // Admin Routes
   { path: 'totalvotes', component: VotesComponent},
   { path: 'all-voters', component: VotersComponent},
   { path: 'new-voter', component: VotercreateComponent},
+  { path: 'candidate-id', component:CandidateDetailsComponent}
 
 
 

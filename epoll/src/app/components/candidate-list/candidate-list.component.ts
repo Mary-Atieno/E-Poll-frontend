@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CandidateService } from 'src/app/services/candidate/candidate.service';
 
 @Component({
   selector: 'app-candidate-list',

@@ -38,7 +38,7 @@ export class VoterhomeComponent implements OnInit {
   }
 
   logout(): void{
-    this.http.post('https://e-poll-backend.herokuapp.com/api/logout/', {}, {withCredentials: true})
+    this.http.post('https://e-poll-backend.herokuapp.com/api/api-auth/logout/', {}, {withCredentials: true})
       .subscribe( () =>this.authenticated = false);
 
 

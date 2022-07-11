@@ -2,75 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidates</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidates</title>
 </head>
 
 <body>
-    <!-- sidebar -->
-    <div class="container"><br><br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md-4"
-                    style="margin-left:10px;background-color:rgba(2, 48, 71, 1); color:white; width:fit-content; height:auto;border-radius:10px;font-size:10px !important;">
-                    <br><br>
-                    <div class="d-flex">
-                        <div class="image">
-                            <img src="" alt="" width="200px">
-                        </div>
-                        <div class="head">
-                            <h2>Administrator</h2>
-                        </div>
-                        <br><br><br><br><br>
-                    </div>
-                    <h5><a href="" class="text-white" style="text-decoration:none;">Votes</a></h5>
-                    <br>
-                    <br>
-                    <h5><a href="" class="text-white" style="text-decoration:none;">Voters</a></h5>
-                    <br>
-                    <br>
-                    <br>
-                    <h5><a href="" class="text-info" style="text-decoration:none; font-weight:bold">Manage</a></h5>
-                    <br>
-                    <br>
-                    <br>
-                    <h5><a href="" class="text-white" style="text-decoration:none;">Position</a></h5>
-                    <br>
-                    <br>
-                    <h5><a href="" class="text-white" style="text-decoration:none;">Candidates</a></h5>
-                    <br>
-                    <br>
-                    <h5><a href="" class="text-white" style="text-decoration:none;">Ballot-Position</a></h5>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                </div>
-                <div class="col-md-5" style="border:none;margin-left: 30px;">
-                    <br><br>
-                    <h2>Candidates</h2>
-                    <br>
-                    <button type="button" class="btn btn-md btn-info">+Add</button>
-                    <br><br><br>
-                    <h2 class="ml-5">Add new candidate</h2>
-                    <div class="card shadow border p-3" style="width: 500px; background-color: rgba(217, 217, 217, 1); height:auto;">
-                        <form action="">
-                            <label for="name">Name</label><br>
-                            <input type="text">
-                            <br><br>
-                            <label for="name">Position</label><br>
-                            <input type="text">
-                            <br><br>
-                            <label for="name">Bio</label><br>
-                            <textarea name="" id="" cols="30" rows="3"></textarea>
-                            <br><br>
-                            <label for="name">Image</label><br>
-                            <input type="file" id="myFile" name="filename">
-                            <br><br>
-                        </form>
-                    </div>
-                </div>
+  <!-- sidebar -->
+  <div class="container"><br><br>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-4"
+          style="margin-left:10px;background-color:rgba(2, 48, 71, 1); color:white; width:fit-content; height:auto;border-radius:10px;font-size:10px !important;">
+          <br><br>
+          <div class="d-flex">
+            <div class="image">
+              <img src="" alt="" width="200px">
             </div>
+            <div class="head">
+              <h2>Administrator</h2>
+            </div>
+            <br><br><br><br><br>
+          </div>
+          <h5><a href="" class="text-white" style="text-decoration:none;">Votes</a></h5>
+          <br>
+          <br>
+          <h5><a href="" class="text-white" style="text-decoration:none;">Voters</a></h5>
+          <br>
+          <br>
+          <br>
+          <h5><a href="" class="text-info" style="text-decoration:none; font-weight:bold">Manage</a></h5>
+          <br>
+          <br>
+          <br>
+          <h5><a href="" class="text-white" style="text-decoration:none;">Position</a></h5>
+          <br>
+          <br>
+          <h5><a href="" class="text-white" style="text-decoration:none;">Candidates</a></h5>
+          <br>
+          <br>
+          <h5><a href="" class="text-white" style="text-decoration:none;">Ballot-Position</a></h5>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
+        <div class="col-md-5" style="border:none;margin-left: 30px;">
+          <br><br>
+          <h2>Candidates</h2>
+          <br>
+          <button type="button" class="btn btn-md btn-info">+Add</button>
+          <br><br><br>
+          <h2 class="ml-5">Add new candidate</h2>
+          <div class="card shadow border p-3"
+            style="width: 500px; background-color: rgba(217, 217, 217, 1); height:auto;">
+            <div class="submit-form">
+              <div *ngIf="!submitted">
+                <div class="form-group">
+              <!-- <form action="candidates.component.html" method="post"> -->
+                  <label for="name">Name</label><br>
+                  <input type="text" class="form-control" id="name" required [(ngModel)]="candidate.fullname"
+                    name="name" />
+                </div>
+                <div class="form-group">
+                  <br><br>
+                  <label for="name">Position</label><br>
+                  <input class="form-control" id="position" required [(ngModel)]="candidate.position" name="position" />
+                  <br><br>
+                </div>
+                <div class="form-group">
+                  <label for="name">Bio</label><br>
+                  <textarea name="bio" id="bio" cols="30" rows="3" class="form-control" required
+                    [(ngModel)]="candidate.bio"></textarea>
+                  <br><br>
+                </div>
+                <div class="form-group">
+                  <label for="name">Image</label><br>
+                  <input type="file" id="myFile" name="myfile" required [(ngModel)]="candidate.image">
+                  <br><br>
+
+                </div>
+
+              <!-- </form> -->
+                <button (click)="saveCandidate()" class="btn btn-success">Submit</button>
+              </div>
+              <div *ngIf="submitted">
+                <h4>Tutorial was submitted successfully!</h4>
+                <button class="btn btn-success" (click)="newCandidate()">Add</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
+
 </html>
